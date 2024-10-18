@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Saira', sans-serif;
+}
+
+main {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex: 1; /* Ocupa o restante do espaço disponível */
+  padding: 0px; /* Adiciona um padding para espaçar o conteúdo */
+  background-image: url(/leo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+  .menu {
+    list-style: none;
+    padding-left: 10px;
+
+    li {
+      margin-bottom: 14px;
+      margin-top: 14px;
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Saira', sans-serif;
+        color: #000000;
+        transition: color 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          color: #aa4ee7;
+        }
+      }
+    }
+  }
+
+
+.items {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  .novos-pacientes {
+    background-color: #7226a5d5;
+    height: 50%;
+    border-radius: 10px;
+    h1 {
+      flex: 1;
+      padding: 15px 0 0 25px;
+      color: #000000;
+      font-size: 25px;
+      font-family: 'Saira', sans-serif;
+    }
+  }
+
+  .calendario-container {
+    margin-top: 20px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mat-calendar {
+    width: 100%;
+  }
+
+  mat-datepicker {
+    width: 100%;
+  }
+
+  .calendar {
+    flex-direction: row;
+    display: flex;
+
+    justify-content: space-between;
+    padding: 150px;
+    width: 100%;
+  }
+
+  .psicos-container {
+    margin-top: 20px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+    h2 {
+      text-align: center;
+      align-items: center;
+      font-size: 2rem;
+      font-family: 'Saira', sans-serif;
+      margin-left: 10px;
+    }
+
+    .lista-psicologos {
+      width: 300px;
+      margin-right: 100px;
+    }
+
+    .lista-psicologos ul {
+      list-style: none;
+      padding: 0;
+    }
+    .lista-psicologos li {
+      display: flex;
+      flex-direction: column;  // Coloca os itens em uma coluna
+      align-items: flex-start;  // Alinha os itens à esquerda
+      padding: 20px 0;  // Aumenta o espaçamento vertical
+    }
+    
+    .lista-psicologos li img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 10px;  // Espaçamento entre a foto e o nome
+    }
+    
+    .lista-psicologos li span {
+      margin-bottom: 5px;  // Espaçamento entre o nome e a linha/seta
+      position: relative;
+      display: inline-block;
+    }
+    
+    .lista-psicologos button {
+      position: relative;
+      width: 100%;  // O botão ocupa toda a largura abaixo do nome
+      height: 20px;  // Altura do botão
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 0;  // Remove o padding do botão
+      margin-top: 5px;  // Espaçamento entre o nome e o botão
+    }
+    
+    .lista-psicologos button::before {
+      content: '→';  // Seta para a direita
+      font-size: 25px;
+      color: #342e6e;
+      position: absolute;
+      top: 0;  // Posiciona a seta na parte superior do botão
+      left: 0;  // Seta começa na posição esquerda
+      transition: left 0.3s ease;
+    }
+    
+    .lista-psicologos button::after {
+      content: '';
+      position: absolute;
+      top: 50%;  // Posiciona a linha na metade do botão
+      left: 0;  // Começa da esquerda
+      width: 0;  // Começa com largura 0
+      height: 2px;  // Altura da linha
+      background-color: #946eeb;  // Cor da linha
+      transition: width 0.3s ease;
+    }
+    
+    .lista-psicologos button:hover::before {
+      left: calc(100% - 20px);  // Move a seta para o final do botão
+    }
+    
+    .lista-psicologos button:hover::after {
+      width: 100%;  // Expande a linha para a largura total do botão
+    }
+    
+  }
+}
+.demo-inline-calendar-card {
+  width: 300px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.table-header,
+.table-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 10px;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffffdc;
+  border-radius: 5px;
+}
+
+.table-header .column {
+  font-weight: bold;
+}
