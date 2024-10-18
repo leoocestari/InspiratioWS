@@ -10,6 +10,8 @@ import { MainComponent } from './main/main.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
+
+  
   isLeftSidebarCollapsed = signal<boolean>(false);
   screenWidth = signal<number>(window.innerWidth);
 

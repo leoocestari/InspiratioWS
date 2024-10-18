@@ -14,12 +14,12 @@ export class LeftSidebarComponent {
   changeIsLeftSidebarCollapsed = output<boolean>();
   items = [
     {
-      routeLink: 'dashboard',
+      routeLink: 'home',
       icon: 'fal fa-calendar',
       label: 'Agendamentos',
     },
     {
-      routeLink: 'products',
+      routeLink: 'register-pacients',
       icon: 'fal fa-user',
       label: 'Pacientes',
     },

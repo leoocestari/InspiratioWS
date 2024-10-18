@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+
+.just-me-again-down-here-regular {
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Saira", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-size: 2000px;
+  background: url('/leo2.jpg');
+  background-position: center;
+  height: 150vh; 
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.3); 
+
+  backdrop-filter: blur(10px); 
+  border-radius: 10px;                       
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.fundo{
+  width: 25vh;
+  
+}
+
+.desc{
+  padding: 15px 0 15px 0;
+}
+
+.button{
+  background: linear-gradient(90deg, #cb66e7c9 50%, #c160e7 50%);
+  width: 100%;
+  background-size: 200%;
+  background-position: right;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out;
+  
+}
+
+.button:hover {
+  background-position: left;
+}
+
+
+
+.link{
+  padding: 2px;
+}
+
