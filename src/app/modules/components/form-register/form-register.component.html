@@ -1,0 +1,33 @@
+<div class="expansion-panel">
+    <!-- Botão/Seta para expandir -->
+    <button (click)="toggleForm()">
+      <span *ngIf="!isExpanded">▼</span>
+      <span *ngIf="isExpanded">▲</span>
+    </button>
+  
+    <!-- Formulário expansivo -->
+    <div *ngIf="isExpanded" class="form-container">
+      <form [formGroup]="registerPacientForm" (ngSubmit)="onSubmit()">
+        <!-- Campos do formulário -->
+        <div>
+          <label for="name">Nome:</label>
+          <input id="name" formControlName="name" />
+        </div>
+  
+        <div>
+          <label for="age">Idade:</label>
+          <input id="age" formControlName="age" />
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" formControlName="email" />
+        </div>
+  
+        <!-- Outros campos do formulário -->
+  
+        <button type="submit" class="text">Registrar Paciente</button>
+      </form>
+    </div>
+  </div>
+  
