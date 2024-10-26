@@ -19,6 +19,11 @@ export class LeftSidebarComponent {
       label: 'Agendamentos',
     },
     {
+      routeLink: 'pacient-report',
+      icon: 'fal fa-calendar',
+      label: 'Relatorio de Paciente',
+    },
+    {
       routeLink: 'register-pacients',
       icon: 'fal fa-user',
       label: 'Pacientes',
