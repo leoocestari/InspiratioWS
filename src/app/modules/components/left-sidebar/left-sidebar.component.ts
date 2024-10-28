@@ -15,18 +15,23 @@ export class LeftSidebarComponent {
   items = [
     {
       routeLink: 'home',
+      icon: 'fal fa-home',
+      label: 'Inicio',
+    },
+    {
+      routeLink: 'agendamentos',
       icon: 'fal fa-calendar',
       label: 'Agendamentos',
     },
     {
       routeLink: 'pacient-report',
-      icon: 'fal fa-calendar',
+      icon: 'fal fa-analytics',
       label: 'Relatorio de Paciente',
     },
     {
       routeLink: 'register-pacients',
       icon: 'fal fa-user',
-      label: 'Pacientes',
+      label: 'Cadastros',
     },
     {
       routeLink: 'pages',
