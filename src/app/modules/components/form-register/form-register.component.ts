@@ -21,8 +21,14 @@ export class FormRegisterComponent {
     // Inicialização do formulário
     this.registerPacientForm = this.fb.group({
       name: [''],
-      age: [''],
+      lastname: [''],
+      birthDate: [''],
       email: [''],
+      rg: [''],
+      cpf: [''],
+      phone: [''],
+      cell:  [''],
+      address: [''],
       // Adicione mais campos conforme necessário
     });
   }
