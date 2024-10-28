@@ -22,8 +22,12 @@ export class FormRegisterEmployeeComponent {
     this.registerEmployeeForm = this.fb.group({
       name: [''],
       position: [''],
-      employeeId: [''],
-      department: [''],
+      birthDate: [''],
+      email: [''],
+      rg: [''],
+      cpf: [''],
+      phone: [''],
+      cell: [''],
       address: [''],
     });
   }
