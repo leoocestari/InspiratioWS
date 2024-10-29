@@ -34,7 +34,7 @@ export class LeftSidebarComponent {
       label: 'Cadastros',
     },
     {
-      routeLink: 'pages',
+      routeLink: 'suport',
       icon: 'fal fa-cog',
       label: 'Suporte',
     },
