@@ -1,0 +1,56 @@
+
+<div class="support-form">
+    <header class="app-header">
+        <h1>Central de Suporte</h1>
+        <p>Envie sua solicitação e entraremos em contato o mais rápido possível</p>
+    </header>
+    <!-- Campo para o nome -->
+    <div class="form-group">
+      <label for="name">Seu nome</label>
+      <input id="name" type="text" formControlName="name" />
+    </div>
+  
+    <!-- Campo para o e-mail -->
+    <div class="form-group">
+      <label for="email">E-mail para resposta</label>
+      <input id="email" type="email" formControlName="email" />
+    </div>
+  
+    <!-- Campo para o assunto -->
+    <div class="form-group">
+      <label for="subject">Assunto</label>
+      <input id="subject" type="subject"  formControlName="subject" />
+
+    </div>
+  
+    <!-- Campo para o departamento -->
+    <div class="form-group">
+      <label for="department">Departamento</label>
+      <select id="department" formControlName="department">
+        <option>Suporte</option>
+        <option>Vendas</option>
+        <option>Financeiro</option>
+      </select>
+    </div>
+  
+    <!-- Campo para a descrição -->
+    <div class="form-group full-width">
+      <label for="description">Descrição detalhada do problema ou dúvida</label>
+      <textarea id="description" formControlName="description" rows="4"></textarea>
+    </div>
+  
+    <!-- Campo para o texto do erro -->
+    <div class="form-group full-width optional">
+      <label for="errorText">Texto do erro <span>(opcional)</span></label>
+      <textarea id="errorText" formControlName="errorText" rows="2"></textarea>
+    </div>
+
+    <!-- Botão de envio -->
+    <div class="form-group full-width submit-button">
+        <button type="button" (click)="onSubmit()">Enviar</button>
+    </div>
+
+  </div>
+
+    
+  

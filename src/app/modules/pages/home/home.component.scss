@@ -17,7 +17,7 @@ main {
   display: flex;
   flex: 1; /* Ocupa o restante do espaço disponível */
   padding: 0px; /* Adiciona um padding para espaçar o conteúdo */
-  background-image: url(/leo2.jpg);
+  background-color: rgba(204, 204, 204, 0.548);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -40,7 +40,7 @@ main {
 
         &:hover {
           cursor: pointer;
-          color: #aa4ee7;
+          color: rgb(170, 78, 231);
         }
       }
     }
@@ -55,7 +55,7 @@ main {
   flex-direction: column;
 
   .novos-pacientes {
-    background-color: #7226a5d5;
+    background-color: rgba(159, 70, 219, 0.925);
     height: 50%;
     border-radius: 10px;
     h1 {
