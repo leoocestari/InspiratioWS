@@ -1,0 +1,11 @@
+<div class="editor-container">
+  <div class="title-bar">
+    <h3>Tratamento</h3>
+  </div>
+  <div class="editor-content">
+    <label for="title">Título:</label>
+    <input type="text" id="title" [(ngModel)]="fileTitle" placeholder="Digite o título">
+    <textarea [(ngModel)]="fileContent" rows="10" placeholder="Escreva o conteúdo..."></textarea>
+    <button (click)="saveFile()">Salvar</button>
+  </div>
+</div>
