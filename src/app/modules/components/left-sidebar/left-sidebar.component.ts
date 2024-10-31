@@ -34,11 +34,6 @@ export class LeftSidebarComponent {
       label: 'Cadastros',
     },
     {
-      routeLink: 'consult',
-      icon: 'fal fa-search',
-      label: 'Consultar',
-    },
-    {
       routeLink: 'suport',
       icon: 'fal fa-cog',
       label: 'Suporte',
