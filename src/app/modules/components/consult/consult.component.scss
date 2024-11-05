@@ -1,84 +1,77 @@
 .patient-list-container {
-    /* Estilização do contêiner da lista de pacientes */
-    border-radius: 8px;
-    background-color: #f5f5f5;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-    .header {
-      /* Estilo do cabeçalho */
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 16px ;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 8px 8px 0 0;
+
+    .icon {
+      margin-right: 8px;
+    }
+
+    h2 {
+      flex-grow: 1;
+      font-size: 1.2em;
+      color: #1E2F4F;
+      margin: 0;
+    }
+
+    .expand-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .patient-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    // Controle de transição
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+
+    &.expanded {
+      max-height: 500px; // ajuste conforme necessário
+      padding: 10px 0px; // espaço para os itens da lista
+    }
+
+    li {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 10px 16px;
-      background-color: #ffffff;
+      padding: 12px 16px;
       border-bottom: 1px solid #e0e0e0;
-      border-radius: 8px 8px 0 0;
-  
-      .icon {
-        /* Margem para o ícone de título */
-        margin-right: 8px;
+
+      &:last-child {
+        border-bottom: none;
+        border-radius: 0 0 8px 8px;
       }
-  
-      h2 {
-        /* Estilo do título */
-        flex-grow: 1;
-        font-size: 1.2em;
+
+      .patient-name {
+        font-weight: 500;
         color: #1E2F4F;
       }
-  
-      .expand-button {
-        /* Botão de expandir/colapsar */
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
-    }
-  
-    .patient-list {
-      /* Lista de pacientes */
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  
-      li {
-        /* Estilo de cada item de paciente */
+
+      .actions {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 16px;
-        border-bottom: 1px solid #e0e0e0;
-        background-color: #e0e0e0;
-  
-        &:last-child {
-          /* Remove a borda do último item e arredonda os cantos inferiores */
-          border-bottom: none;
-          border-radius: 0 0 8px 8px;
-        }
-  
-        .patient-name {
-          /* Estilo do nome do paciente */
-          font-weight: 500;
-          color: #1E2F4F;
-        }
-  
-        .actions {
-          /* Contêiner para os botões de ação */
-          display: flex;
-          gap: 8px;
-  
-          button {
-            /* Estilo dos botões de ação */
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 4px;
-  
-            svg {
-              width: 20px;
-              height: 20px;
-            }
-          }
+        gap: 8px;
+
+        button {
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 4px;
         }
       }
     }
   }
-  
+}

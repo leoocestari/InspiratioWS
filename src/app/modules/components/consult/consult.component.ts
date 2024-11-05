@@ -22,7 +22,7 @@ export class ConsultComponent {
   ];
 
   // Propriedade para controlar a visibilidade da lista
-  isListExpanded: boolean = true;
+  isListExpanded: boolean = false;
 
   // Função para alternar a visibilidade da lista
   toggleList() {
