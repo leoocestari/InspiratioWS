@@ -58,7 +58,6 @@ export class FormRegisterComponent {
     if (input.files && input.files[0]) {
       const file = input.files[0];
       console.log('Foto selecionada:', file);
-
       // Aqui você pode processar o arquivo, exibir uma prévia ou enviá-lo para o servidor
     }
   }

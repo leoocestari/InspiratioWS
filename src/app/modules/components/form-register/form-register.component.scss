@@ -9,8 +9,8 @@
     display: flex;
     justify-content: space-between; // Espaçamento entre os elementos
     align-items: center; // Alinhamento central dos itens
-    
-    
+
+
 
     // Estilo para o botão do cabeçalho
     button {
@@ -34,11 +34,12 @@
       }
 
       // Estilo para o título no cabeçalho
-      p {
-        font-size: 18px; // Tamanho da fonte
-        font-weight: bold; // Negrito
-        color: #000000; // Cor do texto
-        margin: 0; // Remover margens padrão
+      h2 {
+        flex-grow: 1;
+        font-size: 1.2em;
+        color: #1E2F4F;
+        margin: 0;
+        font-weight: 500;
       }
     }
   }

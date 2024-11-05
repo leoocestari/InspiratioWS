@@ -9,17 +9,20 @@
     padding: 16px ;
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px;
+    gap: 12px;
 
     .icon {
-      margin-right: 8px;
+      margin: 0;
+      padding: 0;
     }
 
     h2 {
       flex-grow: 1;
       font-size: 1.2em;
-      color: #1E2F4F;
+      color: #000000;
       margin: 0;
+      font-weight: 500;
     }
 
     .expand-button {
@@ -58,7 +61,7 @@
 
       .patient-name {
         font-weight: 500;
-        color: #1E2F4F;
+        color: #000000;
       }
 
       .actions {
