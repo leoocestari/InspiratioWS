@@ -1,0 +1,38 @@
+<div class="container">
+  <!-- Filtro de data -->
+  <div class="date-filter">
+    <mat-form-field appearance="fill">
+      <mat-label>Escolha a data</mat-label>
+      <input matInput [matDatepicker]="picker" (dateChange)="onDateChange($event)">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <!-- Botões para alternar entre as listas -->
+  <div class="button-group">
+    <button mat-raised-button color="primary" (click)="setListType('agendados')">Pacientes Agendados</button>
+    <button mat-raised-button color="accent" (click)="setListType('feitas')">Consultas Feitas</button>
+  </div>
+
+  <!-- Listagem de arquivos -->
+  <div *ngIf="listType === 'agendados'" class="list">
+    <h3>Pacientes Agendados</h3>
+    <div *ngFor="let item of filteredAgendados">
+      {{ item.name }}
+      <button mat-icon-button color="warn" (click)="deleteItem(item)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="listType === 'feitas'" class="list">
+    <h3>Consultas Feitas</h3>
+    <div *ngFor="let item of filteredFeitas">
+      {{ item.name }}
+      <button mat-icon-button color="warn" (click)="deleteItem(item)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

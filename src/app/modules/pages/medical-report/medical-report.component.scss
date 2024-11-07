@@ -1,0 +1,95 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background-image: url("/leo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.items {
+  flex-grow: 1;
+  
+  
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  .table{
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba($color: #7b5fc7, $alpha: 1.0);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+   
+   
+    
+  }
+
+  .table-doctor {
+    background-color: rgba($color: #ffffff, $alpha: 1.0);
+    border-radius: 10px;
+    padding: 5px; // Reduz o padding para apertar os elementos
+    height: auto;
+    max-height: 150px;
+    max-width: 760px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; // Mantém os itens no topo
+    gap: 5px; // Ajusta o espaço entre os itens
+}
+
+
+
+  .table-customer{
+    padding: 10px;
+    height: 120px;
+    background-color: rgba($color: #ffffff, $alpha: 1.0);
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex: end;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .icon{
+    padding-left: 10px;
+  }
+}
+.customer-content{
+  display: flex;
+  flex: end;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+
+
+h1{
+font-size: 22px;
+}
+h2{
+font-size: 18px;
+}
+p{
+font-size: 12px;
+
+}
+
+h1, h2, p {
+margin: 2px 0; // Reduz a margem para deixar os elementos mais compactos
+}
+
+.bottom-container{
+display: flex;
+justify-content: space-between;
+padding: 50px;
+
+
+}
