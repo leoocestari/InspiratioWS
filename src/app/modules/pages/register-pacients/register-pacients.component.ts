@@ -5,11 +5,7 @@ import { FormRegisterEmployeeComponent } from "../../components/form-register-em
 @Component({
   selector: 'app-register-pacients',
   standalone: true,
-  imports: [
-    RegisterPacientsComponent,
-    FormRegisterComponent,
-    FormRegisterEmployeeComponent
-],
+  imports: [FormRegisterComponent, FormRegisterEmployeeComponent],
   templateUrl: './register-pacients.component.html',
   styleUrl: './register-pacients.component.scss'
 })
