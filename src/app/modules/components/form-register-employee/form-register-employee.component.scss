@@ -1,31 +1,40 @@
+// Painel de expansão que envolve o conteúdo
 .expansion-panel {
-  background-color: #ffffff;
-  padding: 16px;
-  border-radius: 10px;
+    padding: 16px; // Espaçamento interno
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
+  // Estilo para o cabeçalho e botão de registro
   .style-button-register {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; // Espaçamento entre os elementos
+    align-items: center; // Alinhamento central dos itens
 
 
 
+    // Estilo para o botão do cabeçalho
     button {
-      border: none;
-      cursor: pointer;
-      background-color: transparent;
+      border: none; // Remover borda padrão do botão
+      cursor: pointer; // Alterar cursor para indicar clicável
+      background-color: transparent; // Fundo transparente para o botão
     }
 
+    // Estilo para o conteúdo do cabeçalho do painel de expansão
     .expansion-panel-header {
       display: flex;
-      align-items: center;
-      gap: 8px;
+      align-items: center; // Centralizar itens verticalmente
+      gap: 8px; // Espaçamento entre o ícone e o texto
 
+      // Estilo para o ícone no cabeçalho
       .icon {
-        font-size: 18px;
-        color: #000000;
+        padding: 0;
+        margin: 0;
+        font-size: 18px; // Tamanho do ícone
+        color: #000000; // Cor do ícone
       }
 
+      // Estilo para o título no cabeçalho
       h2 {
         flex-grow: 1;
         font-size: 1.2em;
@@ -36,45 +45,51 @@
     }
   }
 
+  // Contêiner do formulário expansível
   .form-container {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    padding: 0 16px;
+    overflow: hidden; // Ocultar conteúdo ao colapsar
+    max-height: 0; // Altura inicial zero para o estado colapsado
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; // Transição suave
+    padding: 0 16px; // Padding lateral
 
+    // Classe de expansão do formulário
     &.expanded {
-      max-height: 1000px; // Defina um valor que cubra a altura máxima do conteúdo
-      padding: 16px;
+      max-height: 1000px; // Altura máxima ao expandir
+      padding: 16px; // Padding adicional ao expandir
     }
 
+    // Estilo para o formulário interno
     form {
       display: flex;
-      flex-direction: column;
-      gap: 16px;
+      flex-direction: column; // Layout em coluna
+      gap: 16px; // Espaçamento entre elementos do formulário
 
+      // Linha de formulário com múltiplos campos
       .form-row {
         display: flex;
-        gap: 16px;
+        gap: 16px; // Espaçamento entre campos
 
+        // Estilo para cada campo de entrada
         div {
           display: flex;
           flex-direction: column;
-          flex: 1 1 48%;
+          flex: 1 1 48%; // Tamanho flexível para ocupar metade da linha
 
           label {
-            font-weight: bold;
-            margin-bottom: 4px;
+            font-weight: bold; // Negrito para o rótulo
+            margin-bottom: 4px; // Espaço abaixo do rótulo
           }
 
           input {
-            height: 32px;
-            padding: 4px 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
+            height: 32px; // Altura do campo de entrada
+            padding: 4px 8px; // Padding interno
+            border: 1px solid #ccc; // Borda do campo
+            border-radius: 4px; // Bordas arredondadas
+            font-size: 14px; // Tamanho da fonte do campo
           }
         }
 
+        // Linha que ocupa toda a largura do contêiner
         &.full-width {
           display: flex;
           justify-content: center;
@@ -95,55 +110,60 @@
           }
         }
 
+        // Linha centralizada com espaçamento extra
         &.center {
-          justify-content: space-evenly;
-          gap: 100px;
+          justify-content: space-evenly; // Espaçamento igual entre itens
+          gap: 100px; // Espaçamento entre os campos
         }
       }
 
+      // Estilo para o botão de upload de foto
       .photo-button {
         display: flex;
-        align-items: center;
-        gap: 8px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        padding: 8px 16px;
-        border-radius: 4px;
-        font-weight: bold;
-        cursor: pointer;
-        font-size: 16px;
+        align-items: center; // Alinhar ícone e texto verticalmente
+        gap: 8px; // Espaçamento entre ícone e texto
+        background-color: #fff; // Fundo branco para o botão
+        border: 1px solid #ccc; // Borda ao redor do botão
+        padding: 8px 16px; // Padding interno
+        border-radius: 4px; // Bordas arredondadas
+        font-weight: bold; // Texto em negrito
+        cursor: pointer; // Cursor de ponteiro
+        font-size: 16px; // Tamanho da fonte
 
+        // Ícone dentro do botão de foto
         .photo-icon {
-          font-size: 24px;
+          font-size: 24px; // Tamanho do ícone
           display: flex;
           justify-content: center;
           align-items: center;
         }
       }
 
+      // Estilo para o cabeçalho de responsável
       .header-responsavel {
-
-        font-size: 18px;
-        font-weight: bold;
-        color: #000000;
-        margin: 0;
+        font-size: 18px; // Tamanho da fonte
+        font-weight: bold; // Negrito
+        color: #000000; // Cor do texto
+        margin: 0; // Remover margens padrão
       }
 
+      // Estilo para os botões de ação
       .action-button {
-        padding: 8px 16px;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        font-weight: bold;
+        padding: 8px 16px; // Padding interno
+        border: none; // Remover bordas
+        border-radius: 4px; // Bordas arredondadas
+        font-size: 16px; // Tamanho da fonte
+        font-weight: bold; // Negrito
         display: flex;
-        align-items: center;
-        gap: 8px;
-        cursor: pointer;
+        align-items: center; // Alinhar ícone e texto verticalmente
+        gap: 8px; // Espaçamento entre ícone e texto
+        cursor: pointer; // Cursor de ponteiro
 
+        // Estilo específico para os botões de "Voltar" e "Cadastrar"
         &.back,
         &.submit {
-          background-color: #b700ff;
-          color: #ffffff;
+          background-color: #b700ff; // Fundo roxo para botões de ação
+          color: #ffffff; // Cor do texto branco
         }
       }
     }

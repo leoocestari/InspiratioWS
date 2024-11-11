@@ -12,13 +12,13 @@
 
     <!-- Botão/Seta para expandir -->
     <button (click)="toggleForm()">
-      <span *ngIf="!isExpanded" class="arrow-employee">
+      <span *ngIf="!isExpanded" class="arrow-patient">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
           <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10c5.515 0 10-4.486 10-10S17.515 2 12 2zm0 14-5-6h10l-5 6z">
           </path>
         </svg>
       </span>
-      <span *ngIf="isExpanded" class="arrow-employee">
+      <span *ngIf="isExpanded" class="arrow-patient">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
           <path d="M12 2C6.485 2 2 6.486 2 12s4.485 10 10 10c5.514 0 10-4.486 10-10S17.514 2 12 2zM7 14l5-6 5 6H7z">
           </path>
@@ -33,13 +33,13 @@
       <!-- Primeira linha de campos -->
       <div class="form-row">
         <div>
-          <label for="name">Nome Completo:</label>
+          <label for="name">Nome completo do funcionario:</label>
           <input id="name" formControlName="name" />
         </div>
 
         <div>
-          <label for="position">Cargo/Funcao:</label>
-          <input id="position" formControlName="position" />
+          <label for="lastName">Cargo / Funcao:</label>
+          <input id="lastName" formControlName="lastName" />
         </div>
       </div>
 
@@ -47,12 +47,13 @@
       <div class="form-row">
         <div>
           <label for="birthDate">Data de nascimento:</label>
-          <input id="birthDate" formControlName="birthDate" />
+          <input id="birthDate" formControlName="birthDate" placeholder="DD/MM/AAAA" />
         </div>
 
         <div>
           <label for="email">E-mail:</label>
-          <input id="email" formControlName="email" />
+          <input id="email" formControlName="email" placeholder="Ex: exemplo@gmail.com" />
+
         </div>
       </div>
 
@@ -60,12 +61,12 @@
       <div class="form-row">
         <div>
           <label for="rg">RG:</label>
-          <input id="rg" formControlName="rg" />
+          <input id="rg" formControlName="rg" placeholder="Ex: 55.555.555-5" />
         </div>
 
         <div>
           <label for="cpf">CPF:</label>
-          <input id="cpf" formControlName="cpf" />
+          <input id="cpf" formControlName="cpf" placeholder="Ex: 444.444.444-44" />
         </div>
       </div>
 
@@ -74,35 +75,22 @@
         <div>
           <label for="phone">Telefone:</label>
           <input id="phone" formControlName="phone" />
+
         </div>
 
         <div>
           <label for="cell">Celular:</label>
-          <input id="cell" formControlName="cell" />
+          <input id="cell" formControlName="cell" placeholder="Ex: (11) 99999-9999" />
+
         </div>
       </div>
 
       <!-- Linha de endereço -->
       <div class="form-row full-width">
         <label for="address">Endereço:</label>
-        <input id="address" formControlName="address" />
+        <input id="address" formControlName="address"
+          placeholder="Ex: Rua da Praça, 123, Centro, Campinas-SP, CEP: 12345-678" />
       </div>
-
-      <!-- Botão de Upload de Foto -->
-      <div class="form-row center">
-        <button type="button" class="photo-button" (click)="onPhotoButtonClick()">
-          <span class="photo-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
-              <path
-                d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Z" />
-            </svg>
-          </span>
-          Foto
-        </button>
-        <!-- Input de arquivo oculto -->
-        <input type="file" #fileInput (change)="onFileSelected($event)" style="display: none;" accept="image/*" />
-      </div>
-
 
       <!-- Botões Voltar e Cadastrar -->
       <div class="form-row center">

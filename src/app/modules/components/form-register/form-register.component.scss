@@ -1,8 +1,9 @@
 // Painel de expansão que envolve o conteúdo
 .expansion-panel {
-  background-color: #ffffff; // Fundo branco para o painel
   padding: 16px; // Espaçamento interno
-  border-radius: 10px; // Bordas arredondadas para o painel
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   // Estilo para o cabeçalho e botão de registro
   .style-button-register {
