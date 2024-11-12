@@ -14,7 +14,7 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
   styleUrls: ['./form-register-employee.component.scss']
 })
 export class FormRegisterEmployeeComponent {
-  isExpanded: boolean = false; // Variável de controle
+  isExpanded: boolean = false; // Variável de controle 
   registerEmployeeForm: FormGroup;
 
   // Referência ao input de arquivo
@@ -24,7 +24,7 @@ export class FormRegisterEmployeeComponent {
     // Inicialização do formulário
     this.registerEmployeeForm = this.fb.group({
       name: [''],
-      lastname: [''],
+      lastName: [''],
       birthDate: [''],
       email: [''],
       rg: [''],
