@@ -4,6 +4,8 @@
     border-radius: 8px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 80vh; // Altura máxima de 100% da altura da viewport
+    overflow-y: auto; // Adiciona rolagem vertical quando necessário
 
   // Estilo para o cabeçalho e botão de registro
   .style-button-register {
