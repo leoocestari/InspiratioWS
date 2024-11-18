@@ -119,6 +119,27 @@
         }
       }
 
+      .photo-button {
+        display: flex;
+        align-items: center; // Alinhar ícone e texto verticalmente
+        gap: 8px; // Espaçamento entre ícone e texto
+        background-color: #fff; // Fundo branco para o botão
+        border: 1px solid #ccc; // Borda ao redor do botão
+        padding: 8px 16px; // Padding interno
+        border-radius: 4px; // Bordas arredondadas
+        font-weight: bold; // Texto em negrito
+        cursor: pointer; // Cursor de ponteiro
+        font-size: 16px; // Tamanho da fonte
+
+        // Ícone dentro do botão de foto
+        .photo-icon {
+          font-size: 24px; // Tamanho do ícone
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
       // Estilo para o botão de upload de foto
       .photo-button {
         display: flex;
