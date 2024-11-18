@@ -26,11 +26,11 @@ export class LeftSidebarComponent {
     {
       routeLink: 'medical-report',
       icon: 'fal fa-analytics',
-      label: 'Relatorio de Paciente',
+      label: 'Relatorio Geral',
     },
     {
       routeLink: 'pacient-report',
-      icon: 'fal fa-analytics',
+      icon: 'fal fa-receipt',
       label: 'Relatorio de Paciente',
     },
     {
