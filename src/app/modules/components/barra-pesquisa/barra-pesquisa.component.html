@@ -1,0 +1,16 @@
+<div class="search-bar">
+    <button class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </button>
+    <input
+      type="text"
+      placeholder="Search"
+      [(ngModel)]="searchTerm"
+      (input)="onSearch()"
+      class="search-input"
+    />
+    <button class="search-icon" (click)="onSearch()">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+  
