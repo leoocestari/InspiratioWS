@@ -28,7 +28,7 @@ export const routes: Routes = [
     component: AuthenticatedLayoutComponent,
     
     children: [
-      { path: 'home', component: HomeComponent },
+      { path: 'agendamentos', component: HomeComponent },
       { path: 'login', component: LoginComponent },
       { path: 'register-pacients', component: RegisterPacientsComponent },
       { path: 'medical-report', component: MedicalReportComponent },

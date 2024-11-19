@@ -4,6 +4,8 @@
     border-radius: 8px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 80vh; // Altura máxima de 100% da altura da viewport
+    overflow-y: auto; // Adiciona rolagem vertical quando necessário
 
   // Estilo para o cabeçalho e botão de registro
   .style-button-register {
@@ -114,6 +116,27 @@
         &.center {
           justify-content: space-evenly; // Espaçamento igual entre itens
           gap: 100px; // Espaçamento entre os campos
+        }
+      }
+
+      .photo-button {
+        display: flex;
+        align-items: center; // Alinhar ícone e texto verticalmente
+        gap: 8px; // Espaçamento entre ícone e texto
+        background-color: #fff; // Fundo branco para o botão
+        border: 1px solid #ccc; // Borda ao redor do botão
+        padding: 8px 16px; // Padding interno
+        border-radius: 4px; // Bordas arredondadas
+        font-weight: bold; // Texto em negrito
+        cursor: pointer; // Cursor de ponteiro
+        font-size: 16px; // Tamanho da fonte
+
+        // Ícone dentro do botão de foto
+        .photo-icon {
+          font-size: 24px; // Tamanho do ícone
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
 
