@@ -5,12 +5,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px;
+  height: 100vh;
+  
 }
 
 .items {
-  flex-grow: 1;
-  
-  
+
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -88,8 +88,8 @@ margin: 2px 0; // Reduz a margem para deixar os elementos mais compactos
 
 .bottom-container{
 display: flex;
-justify-content: space-between;
+justify-content: center;
 padding: 50px;
-
+padding-top: 250px;
 
 }

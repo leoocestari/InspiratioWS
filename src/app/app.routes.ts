@@ -37,5 +37,5 @@ export const routes: Routes = [
       { path: 'consultar', component: ConsultarComponent },
     ],
   },
-  //{ path: '**', redirectTo: '/login' },
+  { path: '**', redirectTo: '/login' },
 ];

@@ -9,14 +9,16 @@
     </mat-form-field>
   </div>
 
-  <!-- Botões para alternar entre as listas -->
-  <div class="button-group">
-    <button mat-raised-button color="primary" (click)="setListType('agendados')">Pacientes Agendados</button>
-    <button mat-raised-button color="primary" (click)="setListType('feitas')">Consultas Feitas</button>
-  </div>
+ 
+  
 
   <!-- Listagem de arquivos -->
   <div *ngIf="listType === 'agendados'" class="list">
+     <!-- Botões para alternar entre as listas -->
+    <div class="button-group">
+      <button mat-raised-button color="primary" (click)="setListType('agendados')">Pacientes Agendados</button>
+      <button mat-raised-button color="primary" (click)="setListType('feitas')">Consultas Feitas</button>
+    </div>
     <h3>Pacientes Agendados</h3>
     <div *ngFor="let item of filteredAgendados">
       {{ item.name }}
